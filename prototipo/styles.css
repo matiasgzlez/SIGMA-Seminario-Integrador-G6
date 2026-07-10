@@ -25,7 +25,7 @@ body{margin:0;font-family:var(--sans);color:var(--text);background:var(--bg);fon
 .side{background:rgba(246,246,248,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
   border-right:1px solid var(--sep-soft);display:flex;flex-direction:column;position:sticky;top:0;height:100vh}
 .logo{padding:22px 22px 14px;display:flex;align-items:baseline;gap:9px}
-.logo b{font-weight:700;font-size:1.4rem;color:var(--text);letter-spacing:-.02em}
+.logo b{font-weight:700;font-size:1.4rem;color:var(--green);letter-spacing:-.02em}
 .logo span{font-family:var(--mono);font-size:.6rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em}
 .hu-list-btn{margin-left:auto;font:600 .68rem var(--mono);background:var(--orange-bg);color:var(--accent-2);border:0;border-radius:980px;padding:5px 11px;cursor:pointer;align-self:center;transition:.12s}
 .hu-list-btn:hover{background:var(--accent-2);color:#fff}
