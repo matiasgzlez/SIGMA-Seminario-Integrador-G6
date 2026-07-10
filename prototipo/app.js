@@ -667,7 +667,7 @@ function openHUList(){
     body+=`<div class="nav-group" style="padding:12px 0 4px">Sprint ${s}</div>`;
     sprints[s].forEach(id=>{ body+=`<div class="hu-item" onclick="goHU('${id}')"><span class="hu-item-id">${id}</span><span class="hu-item-tx">${HU[id]||''}</span><span class="hu-item-go">→</span></div>`; });
   });
-  modal(`Historias de Usuario · ${Object.keys(HU_LOC).length}`,body,'<button class="btn" onclick="closeModal()">Cerrar</button>');
+  modal(`Historias de Usuario · ${Object.keys(HU_LOC).length}`,body,'<a class="btn" href="https://github.com/users/matiasgzlez/projects/4" target="_blank" rel="noopener">🔗 Ver en GitHub Projects ↗</a><button class="btn" onclick="closeModal()">Cerrar</button>');
 }
 function goHU(id){
   const l=HU_LOC[id]; if(!l)return; closeModal();

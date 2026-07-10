@@ -48,6 +48,8 @@ nav a.active .ic{opacity:1}
 nav a .ic{width:20px;text-align:center;opacity:.55;font-size:.95rem}
 .nav-badge{margin-left:auto;background:var(--red);color:#fff;font-size:.66rem;font-weight:700;min-width:18px;height:18px;border-radius:980px;display:inline-flex;align-items:center;justify-content:center;padding:0 5px}
 nav a.active .nav-badge{background:#fff;color:var(--accent)}
+.side-foot{margin:6px 12px 14px;padding:9px 12px;border-radius:10px;font-size:.78rem;font-weight:500;color:var(--text2);text-decoration:none;display:flex;align-items:center;gap:8px;border:1px solid var(--sep-soft);transition:.12s}
+.side-foot:hover{border-color:var(--accent);color:var(--accent);background:var(--fill)}
 
 /* main */
 .main{display:flex;flex-direction:column;min-width:0;background:var(--bg)}
