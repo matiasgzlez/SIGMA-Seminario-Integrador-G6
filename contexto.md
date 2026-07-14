@@ -425,8 +425,8 @@ Se implementan como **criterios de aceptación de HU existentes** (evita fragmen
 
 ## Preguntas abiertas (❓ decisiones del equipo)
 1. ✅ **RESUELTO (2026-07-09):** Personas es exclusiva de SIGMA → **se elimina**; los datos personales van en administradores/tecnicos/autorizados.
-2. Ticket: ¿eliminamos `diagnosticoEstado/Descripcion` o dejamos solo `preDiagnostico` del admin?
+2. Ticket: ¿eliminamos `diagnosticoEstado/Descripcion` o dejamos solo `preDiagnostico` del admin? SOLUCIONADO: Considerando que el preDiagnostico que realiza el administrador no será igual que el Diagnóstico que realice el técnico, mantenemos ambos, pero eliminamos diagnosticoEstado manteniendo solo Descrpición ya que tener ambos es redundante
 3. `clasificacionActivos`: ¿N:M o un activo tiene un único `idTipoActivo`?
 4. Dependencia circular `areas ↔ autorizados`: ¿cómo la resolvemos?
 5. ¿Mantenemos `tecnicoControlaActivo`?
-6. `personasConformanFacultad`: si la facultad es única, ¿pasa a atributo?
+6. `personasConformanFacultad`: si la facultad es única, ¿pasa a atributo? SOLUCIÓN: La facultad no es única por lo que no la consideramos atributos, varias personas pueden trabajar en varias facultades 
