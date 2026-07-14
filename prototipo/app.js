@@ -5,7 +5,7 @@
 
 /* ---------- HU catalog (chips de referencia) ---------- */
 const HU={
- 'HU-05':'Como administrador, quiero gestionar los edificios de la facultad, para tener registrada la estructura edilicia.',
+ 'HU-05':'Como administrador, quiero gestionar los edificios de la facultad, para tener registrada la infraestructura.',
  'HU-06':'Como administrador, quiero gestionar los técnicos y su especialidad, para saber con qué recursos cuento al asignar una OT.',
  'HU-07':'Como administrador, quiero registrar usuarios autorizados y asignarles un área, para habilitarlos a cargar tickets.',
  'HU-08':'Como administrador, quiero gestionar los activos físicos y su ubicación, para mantener actualizado el inventario de activos.',
