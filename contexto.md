@@ -1,7 +1,7 @@
 # CONTEXTO — SIGMA (Seminario Integrador · Grupo 6)
 
 > Fuente única de verdad del proyecto. Se actualiza a medida que avanzamos.
-> Última actualización: 2026-07-14
+> Última actualización: 2026-07-16
 
 ---
 
@@ -25,8 +25,8 @@
 | 7 | Glosario de Términos | ✅ v3 validado con el equipo (§7) | PDF Glosario (desactualizado) |
 | 8 | Modelo de Tablas | 🟠 **a corregir** | PDF SQL + ER (ver §11) |
 | 9 | Diccionario de Datos | 🟠 **a corregir** | PDF Diccionario |
-| 10 | Mapa de Historias | 🟢 corregido (propuesta, §13.2) — validar | Story map por sprint |
-| 11 | Road Map (Plan de release) | 🟢 corregido (propuesta, §13.2) — validar | Cronograma 7 sprints |
+| 10 | Mapa de Historias | 🟢 sincronizado con GitHub (§13.2) — corregir 8 inconsistencias (§13.2.2) | Story map por sprint |
+| 11 | Road Map (Plan de release) | 🟢 sincronizado con GitHub (§13.2) — falta sprint para T1–T4 | Cronograma 7 sprints |
 | 12 | Herramientas de trabajo en equipo | ⬜ pendiente | — |
 | 13 | Arquitectura de Hardware y Software | ⬜ pendiente | — |
 
@@ -37,7 +37,7 @@ Leyenda: ✅ listo · 🟡 parcial · 🟠 tenemos pero requiere corrección · 
 - `docs/entrega-17-07/hu-antes-despues.pdf` — comparativa de HU antes/después de la corrección.
 - `prototipo/index.html` — prototipo navegable (localhost: `cd prototipo && npm run dev` → :3000; Vercel-ready). En curso: CRUD real con localStorage.
 - `prototipo/roadmap.html` — story map / tablero de sprints editable.
-- **GitHub:** 32 Issues (1×HU) + 7 milestones (sprints) + labels. Falta el Project board visual (scope `project`).
+- **GitHub:** 41 issues = **34 HU** (#1–#34, con milestone) + **4 tareas de setup** T1–T4 (#35–#38, sin milestone) + **3 duplicados a cerrar** (#39, #40, #41) · 7 milestones (sprints) + labels. Ver §13.2. Falta el Project board visual (scope `project`).
 
 ---
 
@@ -319,13 +319,18 @@ Fuente: PDF "Diccionario". Estructura por columna: `Tabla | Campo | Tipo | Longi
 
 ---
 
-## 12–13. Mapa de Historias · Road Map (VERSIÓN ACTUAL — pendiente de corrección de HU)
+## 12–13. Mapa de Historias · Road Map
 
 **Cronograma:** 7 sprints de **2 semanas** c/u. Ventana total: **10/08/2026 → 26/11/2026**.
 Fechas indicativas por sprint (2 semanas): S1 10–23 ago · S2 24 ago–6 sep · S3 7–20 sep · S4 21 sep–4 oct · S5 5–18 oct · S6 19 oct–1 nov · S7 2–15 nov (+ buffer hasta 26 nov).
 
-> Los números de HU salteados (HU-01 a 04, 24, 25, 28, 31, 39) corresponden a HU **eliminadas/corregidas en el momento** con la profe. No se buscan. Total actual: **35 HU**.
-> ⭐ HU-10 y HU-19 aparecen **destacadas (negras)** en el tablero — revisar por qué (¿críticas / en discusión?).
+> 📌 **La versión vigente del backlog es §13.2** (numeración HU-1…HU-34, sincronizada con GitHub el 2026-07-16).
+> §12 y §13.1 quedan como **registro histórico** y usan la **numeración vieja** (HU-05, HU-38, HU-45…): sirven para entender de dónde salió cada corrección. Ver la columna *(antes)* de §13.2 para la equivalencia.
+
+### 12.1 Backlog ORIGINAL entregado (numeración vieja — histórico)
+
+> Los números de HU salteados (HU-01 a 04, 24, 25, 28, 31, 39) corresponden a HU **eliminadas/corregidas en el momento** con la profe. (HU-01 a 04 luego se reconvirtieron en las tareas técnicas T1–T4, ver §13.2.1.) Total en ese momento: **35 HU**.
+> ⭐ HU-10 y HU-19 aparecían **destacadas (negras)** en el tablero.
 
 ### SPRINT 1 — ABM base / configuración
 | HU | Rol | Historia |
@@ -390,7 +395,7 @@ Fechas indicativas por sprint (2 semanas): S1 10–23 ago · S2 24 ago–6 sep �
 | HU-43 | Administrador | Ver la carga de trabajo diaria por técnico, para equilibrar asignaciones. |
 | HU-44 | Administrador | Ver tiempos promedio de resolución, para evaluar la eficiencia del área o personal. |
 
-### 13.1 ⭐ CORRECCIONES DE LAS HU (profe) + fix aplicado
+### 13.1 ⭐ CORRECCIONES DE LAS HU (profe) + fix aplicado — _numeración vieja (histórico)_
 
 | # | Observación de la profe | Fix aplicado |
 |---|-------------------------|--------------|
@@ -411,104 +416,141 @@ Fechas indicativas por sprint (2 semanas): S1 10–23 ago · S2 24 ago–6 sep �
 
 **Resumen de cambios:** ➕ HU-45, HU-46 · ❌ HU-10 · 🔀 HU-18, HU-19, HU-40, HU-23 absorbidas · 🔁 reorden HU-17↔16, HU-30 arriba · ✏️ HU-06, HU-11, HU-15, HU-20, HU-21 reescritas.
 
-### 13.2 ROADMAP CORREGIDO — HU FINALES (bien escritas)
+### 13.2 ROADMAP — HU FINALES (sincronizado con GitHub, 2026-07-16)
 
-> Decisiones cerradas (2026-07-09): HU-20 **eliminada** (prioridad vive en HU-17) · HU-12 y HU-30 **fusionadas** · HU-05 **dividida en 3** (edificios/espacios/áreas) · HU-23 en HU-22 · HU-18/19/40 en HU-17.
-> **Story points (SP):** valores **borrador** para estimar juntos. Escala Fibonacci (1,2,3,5,8,13). Balancear sprints por SP (corrección #1). Total actual: **32 HU**.
+> ⚠️ **Las HU fueron RENUMERADAS.** GitHub es ahora la fuente de verdad del backlog: las HU van de **HU-1 a HU-34**, correlativas, y ya no se usan los números viejos (HU-05, HU-38, HU-45…). La columna *(antes)* conserva la equivalencia para poder leer las correcciones de §13.1, que están escritas con la numeración anterior.
+> **Total: 34 HU** (+ 4 tareas técnicas de setup, §13.2.1). Los **story points son borrador**; escala Fibonacci (1, 2, 3, 5, 8, 13).
+> Cada HU es un issue de GitHub, con milestone = sprint y labels `HU` / `rol:*` / `tipo:*`. La columna **#** es el nº de issue.
 
-**SPRINT 1 — Configuración base** · _SP≈24 (⚠️ sobrecargado, rebalancear al estimar)_
-| HU | SP | Historia |
-|----|----|----------|
-| HU-05 | 3 | Como **administrador**, quiero gestionar (alta, baja y modificación) los **edificios** de la facultad, para tener registrada la estructura edilicia donde se ubican los activos. |
-| HU-47 🆕 | 3 | Como **administrador**, quiero gestionar los **espacios** dentro de un edificio (aulas, laboratorios, oficinas), para localizar con precisión dónde está cada activo. |
-| HU-48 🆕 | 3 | Como **administrador**, quiero gestionar las **áreas** funcionales y su responsable, para habilitar la carga y asignación correcta de tickets. |
-| HU-45 🆕 | 2 | Como **administrador**, quiero gestionar las **especialidades**, para clasificar a los técnicos según el tipo de trabajo que pueden realizar. |
-| HU-06 | 3 | Como **administrador**, quiero gestionar los **técnicos** y asignarles su **especialidad** y disponibilidad, para saber con qué recursos humanos cuento al asignar una OT. |
-| HU-46 🆕 | 2 | Como **administrador**, quiero gestionar los **tipos de activos**, para categorizar los activos y asociarles planes de mantenimiento. |
-| HU-08 | 5 | Como **administrador**, quiero gestionar los **activos físicos** y su ubicación, para mantener actualizado el inventario de activos. |
-| HU-07 | 3 | Como **administrador**, quiero registrar **usuarios autorizados** y asignarles un área, para habilitarlos a cargar tickets. |
+**SPRINT 1 — Configuración base** · _SP = 24 (⚠️ el más cargado, rebalancear al estimar)_
 
-**SPRINT 2 — Ticket + consulta + estandarización** · _SP≈21_
-| HU | SP | Historia |
-|----|----|----------|
-| HU-09 | 5 | Como **usuario autorizado**, quiero registrar un **ticket** con descripción y evidencia del desperfecto sobre un activo, para informar una necesidad de mantenimiento. |
-| HU-12 | 5 | Como **administrador**, quiero **visualizar y consultar los tickets** con filtros (estado, fecha, activo, área), para conocer y localizar rápidamente las solicitudes. _(fusiona HU-30)_ |
-| HU-11 | 5 | Como **administrador**, quiero **validar o rechazar un ticket**, para que al validarlo se **genere automáticamente una OT** y al rechazarlo se registre el motivo. |
-| HU-13 | 3 | Como **administrador**, quiero gestionar la **plantilla de tareas**, para estandarizar la creación de las OT. |
-| HU-14 | 3 | Como **administrador**, quiero gestionar (alta en **catálogo**) los ítems de inventario, para mantener actualizado el catálogo del depósito. |
+| # | HU | SP | (antes) | Historia |
+|---|----|----|---------|----------|
+| #1 | HU-1 | 3 | HU-05 | Como **administrador**, quiero gestionar los **edificios** de la facultad, para tener registrada la estructura edilicia donde se ubican los activos. |
+| #2 | HU-2 | 3 | HU-47 | Como **administrador**, quiero gestionar los **espacios** dentro de un edificio, para localizar con precisión dónde está cada activo. |
+| #3 | HU-3 | 3 | HU-48 | Como **administrador**, quiero gestionar las **áreas** funcionales, para habilitar la carga y asignación correcta de tickets. |
+| #4 | HU-4 | 2 | HU-45 | Como **administrador**, quiero gestionar las **especialidades**, para clasificar a los técnicos según el tipo de trabajo que pueden realizar. |
+| #5 | HU-5 | 3 | HU-06 | Como **administrador**, quiero gestionar los **técnicos**, asignarles su **especialidad** y disponibilidad, para saber con qué recursos humanos cuento al asignar una OT. |
+| #6 | HU-6 | 2 | HU-46 | Como **administrador**, quiero gestionar los **tipos de activos**, para categorizarlos. |
+| #7 | HU-7 ⚠️ | 5 | HU-08 | Como **administrador**, quiero gestionar los **activos físicos** y su ubicación, para mantener actualizado el inventario de activos. |
+| #8 | HU-8 | 3 | HU-07 | Como **administrador**, quiero registrar **usuarios autorizados** y asignarles un área, para habilitarlos a cargar tickets. |
 
-**SPRINT 3 — Orden de Trabajo + stock** · _SP≈19_
-| HU | SP | Historia |
-|----|----|----------|
-| HU-17 ⭐ | 8 | Como **administrador**, quiero **crear la OT** a partir de un ticket definiendo sus **tareas**, su **prioridad** y asignando a cada tarea un **técnico** (según especialidad) o un **prestador externo**, para planificar la ejecución del mantenimiento. _(absorbe HU-18, HU-19, HU-20, HU-40)_ |
-| HU-16 | 3 | Como **administrador**, quiero **visualizar el stock** de materiales y herramientas, para verificar la disponibilidad al planificar/ejecutar una OT. |
-| HU-15 | 3 | Como **administrador**, quiero **registrar el ingreso** de materiales/herramientas por remito, para **aumentar el stock** del depósito (distinto del alta en catálogo). |
-| HU-38 | 5 | Como **administrador**, quiero **importar el inventario inicial desde Excel**, para agilizar la carga inicial del catálogo. |
-| HU-49 🆕 | 2 | Como **administrador**, quiero **gestionar los prestadores de servicio** y sus tipos de prestación, para poder asignarlos a las tareas de una OT. |
-| HU-50 🆕 | 3 | Como **administrador**, quiero **registrar la falla** asociada a cada tarea de la OT, para clasificar el problema y darle trazabilidad. |
+**SPRINT 2 — Ticket + consulta + estandarización** · _SP = 21_
 
-**SPRINT 4 — Ejecución + cierre** · _SP≈13_
-| HU | SP | Historia |
-|----|----|----------|
-| HU-21 | 5 | Como **técnico**, quiero **consultar mis tareas asignadas** con filtros por **fecha prevista de inicio** y por **prioridad**, para saber qué debo hacer y en qué orden. |
-| HU-22 | 5 | Como **técnico**, quiero registrar en la tarea los **repuestos/materiales utilizados** y agregar **observaciones**, para asegurar la trazabilidad y documentar actividades adicionales. _(absorbe HU-23)_ |
-| HU-26 | 3 | Como **administrador**, quiero que el sistema **finalice la OT y cierre el ticket automáticamente** al completarse todas sus tareas, para concluir el proceso de mantenimiento sin pasos manuales. _(sin conformidad del solicitante — decisión 2026-07-14)_ |
+| # | HU | SP | (antes) | Historia |
+|---|----|----|---------|----------|
+| #9 | HU-9 | 5 | HU-09 | Como **usuario autorizado**, quiero registrar un **ticket**, para informar una necesidad de mantenimiento. |
+| #10 | HU-10 | 5 | HU-12 | Como **administrador**, quiero **visualizar y consultar los tickets** mediante filtros, para localizar rápidamente las solicitudes. _(fusiona la vieja HU-30)_ |
+| #11 | HU-11 | 5 | HU-11 | Como **administrador**, quiero **validar o rechazar un ticket**, para determinar si se genera la OT. |
+| #12 | HU-12 | 3 | HU-13 | Como **administrador**, quiero gestionar la **plantilla de tareas**, para estandarizar la creación de las OT. |
+| #13 | HU-13 | 3 | HU-14 | Como **administrador**, quiero gestionar los **ítems de inventario**, para mantener actualizado el catálogo del depósito. |
 
-**SPRINT 5 — Seguimiento + preventivo** · _SP≈14_
-| HU | SP | Historia |
-|----|----|----------|
-| HU-27 | 3 | Como **administrador**, quiero **consultar las OT** y su estado, para hacer seguimiento de las tareas programadas. |
-| HU-29 | 8 | Como **administrador**, quiero gestionar los **planes de mantenimiento preventivo** (activos, frecuencia, plantillas, técnicos), para anticiparme a las fallas y generar OT preventivas automáticamente. |
-| HU-32 | 3 | Como **usuario autorizado**, quiero **consultar mis tickets** y su estado, para hacer seguimiento de mis solicitudes. |
+**SPRINT 3 — Orden de Trabajo + stock** · _SP = 24 (⚠️ igual de cargado que S1)_
 
-**SPRINT 6 — Autenticación / usuarios / alertas** · _SP≈19_
-| HU | SP | Historia |
-|----|----|----------|
-| HU-33 | 3 | Como **usuario**, quiero **ingresar con mis credenciales**, para acceder de forma segura al sistema. |
-| HU-34 | 3 | Como **usuario**, quiero **recuperar mi contraseña**, para no perder el acceso al sistema. |
-| HU-35 | 5 | Como **administrador**, quiero **gestionar los usuarios** y sus permisos, para controlar los accesos al sistema. |
-| HU-36 | 3 | Como **administrador**, quiero configurar **alertas de stock mínimo**, para ser notificado cuando un material cae por debajo del mínimo. |
-| HU-37 | 5 | Como **administrador**, quiero ver el **historial de intervenciones por activo**, para evaluar su criticidad y decidir reemplazos. |
+| # | HU | SP | (antes) | Historia |
+|---|----|----|---------|----------|
+| #14 | HU-14 ⭐ | 8 | HU-17 | Como **administrador**, quiero **crear la OT** a partir de un ticket, para planificar la ejecución del mantenimiento. _(absorbe las viejas HU-18, HU-19, HU-20, HU-40: tareas, prioridad, técnico/prestador)_ |
+| #15 | HU-15 | 3 | HU-16 | Como **administrador**, quiero **visualizar el stock** de materiales y herramientas, para verificar la disponibilidad. |
+| #16 | HU-16 | 3 | HU-15 | Como **administrador**, quiero **registrar el ingreso por remito**, para actualizar el stock. |
+| #17 | HU-17 | 5 | HU-38 | Como **administrador**, quiero **importar el inventario inicial desde Excel**, para agilizar la carga inicial. |
+| #33 | HU-33 | 2 | HU-49 | Como **administrador**, quiero gestionar los **prestadores de servicio**, para poder asignarlos a las tareas de una OT. |
+| #34 | HU-34 | 3 | HU-50 | Como **administrador**, quiero registrar la **falla asociada a cada tarea de la OT**, para clasificar el problema y darle trazabilidad. |
 
-**SPRINT 7 — KPIs / Tablero** · _SP≈18_
-| HU | SP | Historia |
-|----|----|----------|
-| HU-41 | 5 | Como **administrador**, quiero identificar las **áreas con mayor incidencia** de fallas, para priorizar mejoras estructurales. |
-| HU-42 | 3 | Como **administrador**, quiero visualizar el **consumo de materiales**, para mejorar la planificación de compras. |
-| HU-43 | 5 | Como **administrador**, quiero ver la **carga de trabajo diaria por técnico**, para equilibrar las asignaciones. |
-| HU-44 | 5 | Como **administrador**, quiero ver los **tiempos promedio de resolución**, para evaluar la eficiencia del área y del personal. |
+**SPRINT 4 — Ejecución + cierre** · _SP = 13_
 
-**HU eliminadas/absorbidas:** HU-10 (❌ diagnóstico burocrático) · HU-18, HU-19, HU-20, HU-40 (→ HU-17) · HU-23 (→ HU-22) · HU-30 (→ HU-12).
+| # | HU | SP | (antes) | Historia |
+|---|----|----|---------|----------|
+| #18 | HU-18 | 5 | HU-21 | Como **técnico**, quiero **consultar mis tareas asignadas** con filtros, para saber qué debo hacer. |
+| #19 | HU-19 | 5 | HU-22 | Como **técnico**, quiero registrar en la tarea los **repuestos/materiales utilizados**, para asegurar la trazabilidad. _(absorbe la vieja HU-23: observaciones)_ |
+| #20 | HU-20 ⚠️ | 3 | HU-26 | Como **administrador**, quiero que el **ticket se cierre automáticamente** cuando su OT se finaliza, para concluir el proceso de mantenimiento. |
 
-**Decisiones abiertas de HU (❓):**
-1. ⚠️ **Sprint 1 sobrecargado (~24 SP)** vs. resto (~13–21). Rebalancear al estimar (mover 1–2 HU a S2/S3).
-2. ✅ **RESUELTO (2026-07-14):** **No existe conformidad.** Al completarse todas las tareas, la **OT se finaliza y el ticket se cierra automáticamente** (HU-26). Ya aplicado: término *Conformidad* eliminado del glosario (§7) y campo `tickets.conformidad` eliminado del modelo (§11.1).
-3. Confirmar **story points** definitivos (los de arriba son borrador).
+**SPRINT 5 — Seguimiento + preventivo** · _SP = 14_
 
-### 13.3 Gaps detectados al analizar flujo + prototipo (2026-07-09)
-- ✅ **RESUELTO — Prestadores:** creada **HU-49** (gestionar prestadores + tipos de prestación), Sprint 3. En el prototipo y GitHub (#33).
-- ✅ **RESUELTO — Fallas:** creada **HU-50** (registrar la falla asociada a cada tarea de la OT), Sprint 3. En el prototipo y GitHub (#34).
-- ✅ **Plantillas→OT:** ya contemplado por **HU-13** (crea plantillas) + **HU-17** (las aplica al crear la OT). No requiere HU nueva.
+| # | HU | SP | (antes) | Historia |
+|---|----|----|---------|----------|
+| #21 | HU-21 | 3 | HU-27 | Como **administrador**, quiero **consultar las OT**, para hacer seguimiento de las tareas programadas. |
+| #22 | HU-22 | 8 | HU-29 | Como **administrador**, quiero gestionar los **planes de mantenimiento preventivo**, para anticiparme a las fallas. |
+| #23 | HU-23 | 3 | HU-32 | Como **usuario autorizado**, quiero **consultar mis tickets** y su estado, para hacer seguimiento de mis solicitudes. |
+
+**SPRINT 6 — Autenticación / usuarios / alertas** · _SP = 19_
+
+| # | HU | SP | (antes) | Historia |
+|---|----|----|---------|----------|
+| #24 | HU-24 | 3 | HU-33 | Como **usuario**, quiero **ingresar con mis credenciales**, para acceder de forma segura al sistema. |
+| #25 | HU-25 | 3 | HU-34 | Como **usuario**, quiero **recuperar mi contraseña**, para no perder el acceso al sistema. |
+| #26 | HU-26 | 5 | HU-35 | Como **administrador**, quiero **gestionar los usuarios y sus permisos**, para controlar los accesos al sistema. |
+| #27 | HU-27 | 3 | HU-36 | Como **administrador**, quiero configurar **alertas de stock mínimo**, para saber cuándo reponer. |
+| #28 | HU-28 | 5 | HU-37 | Como **administrador**, quiero ver el **historial de intervenciones por activo**, para evaluar su criticidad. |
+
+**SPRINT 7 — KPIs / Tablero** · _SP = 18_
+
+| # | HU | SP | (antes) | Historia |
+|---|----|----|---------|----------|
+| #29 | HU-29 | 5 | HU-41 | Como **administrador**, quiero identificar las **áreas con mayor incidencia**, para priorizar mejoras estructurales. |
+| #30 | HU-30 | 3 | HU-42 | Como **administrador**, quiero visualizar el **consumo de materiales**, para mejorar la planificación de compras. |
+| #31 | HU-31 | 5 | HU-43 | Como **administrador**, quiero ver la **carga de trabajo diaria por técnico**, para equilibrar las asignaciones. |
+| #32 | HU-32 | 5 | HU-44 | Como **administrador**, quiero ver los **tiempos promedio de resolución**, para evaluar la eficiencia del área. |
+
+#### 13.2.1 Tareas técnicas de setup (T1–T4) — 🆕 no estaban en el roadmap
+
+Son **tareas técnicas**, no HU de negocio (no tienen rol de usuario ni valor para el usuario final). En GitHub están con label `tipo:setup` y **sin milestone asignado**. Ocupan los números viejos HU-01 a HU-04, que §13.1 daba por eliminados: en realidad se reconvirtieron en estas tareas.
+
+| # | Tarea | SP | Descripción |
+|---|-------|----|-------------|
+| #35 | **T1** | 1 | Configurar el **repositorio** del proyecto, para permitir el trabajo en paralelo y mantener el historial de cambios. |
+| #36 | **T2** | 2 | Definir la **estructura de carpetas** (backend y frontend), para trabajar sobre una estructura común. |
+| #37 | **T3** | 3 | Definir la **base de datos** a partir del modelo de tablas, para garantizar la integridad de los datos. |
+| #38 | **T4** | 2 | Configurar la **ejecución local** del proyecto, para que cualquier integrante pueda levantarlo. |
+
+> ❓ **Decidir:** T1–T4 (8 SP) **no tienen sprint asignado**. Deberían ir al **Sprint 1** (son prerrequisito de todo lo demás), lo que lo llevaría a **32 SP** y agravaría su sobrecarga. Alternativa: tratarlas como *Sprint 0* / trabajo previo al 10/08.
+
+#### 13.2.2 ⚠️ Inconsistencias detectadas en GitHub (2026-07-16) — corregir antes de entregar
+
+| Issue | Problema | Corrección propuesta |
+|-------|----------|----------------------|
+| **#7** | Titulado `HU-8 · Gestionar activos físicos`, pero **#8 también se titula HU-8**. Hay dos HU-8 y **no existe HU-7**. | Renombrar **#7 → `HU-7 · Gestionar activos físicos [5 SP]`**. |
+| **#20** | Titulado `HU-26 · Cerrar ticket…`, pero **#26 también es HU-26**. Hay dos HU-26 y **no existe HU-20**. Además el título arrastra la nota *"HU MAL (el ticket se tiene que cerrar automáticamente cuando la OT es finalizada)"*. | Renombrar **#20 → `HU-20 · Cierre automático del ticket al finalizar la OT [3 SP]`** y reescribir el cuerpo: el cierre es **automático**, el admin no lo dispara (decisión 2026-07-14, ver §3.4). |
+| **#39** | `HU-19.1 Registrar observaciones` — sin milestone. Es la vieja **HU-23**, que §13.1 (corrección #11) declara **absorbida en HU-19**. | **Cerrar como duplicada** e incorporar "observaciones" a los criterios de aceptación de **HU-19 (#19)**. |
+| **#40** | `HU-28.2 · Prestadores Externos` — sin milestone. Es la vieja **HU-40**, que §13.1 (corrección #13) declara **absorbida en HU-17→ahora HU-14 (crear OT)**. El número "28.2" además no corresponde. | **Cerrar como duplicada**; ya está cubierta por **HU-14 (#14)** + **HU-33 (#33)**. |
+| **#41** | `HU-3.1` — sin milestone, sin título descriptivo. Su cuerpo es **idéntico a #8** (registrar usuarios autorizados). | **Cerrar como duplicada** de **HU-8 (#8)**. |
+| **#1** | El cuerpo tiene **dos versiones de la misma HU** separadas por `----------` (quedaron pegadas dos redacciones). | Dejar una sola redacción. |
+| **Todas** | Los criterios de aceptación dicen `- [ ] (a definir con el equipo)`. | Completarlos, al menos en las HU del Sprint 1, antes de arrancar el desarrollo. |
+| **#11, #19** | Formato del título inconsistente: `HU-11 · Validar/rechazar ticket 5 SP` (sin corchetes) y `HU-19 · Registrar repuestos[5 SP]` (sin espacio). | Unificar al patrón `HU-N · Título [N SP]`. |
+
+**Convención de títulos e issues (la que ya usan):**
+- **Título:** `HU-N · <acción concreta> [N SP]` — por ejemplo `HU-14 · Crear OT [8 SP]`.
+- **Cuerpo:** la historia en formato *Como \<rol\>, quiero \<acción\>, para \<beneficio\>*, seguida de `**Story points (borrador):** N`, `**Sprint:** Sprint N` y el bloque `### Criterios de aceptación` con checkboxes.
+- **Labels:** `HU` + `rol:{admin|tecnico|autorizado|usuario|desarrollador}` + `tipo:{ABM|flujo|inventario|auth|KPI|setup}`.
+- **Milestone:** el sprint correspondiente.
+
+**Resumen SP por sprint:** S1 = 24 · S2 = 21 · S3 = 24 · S4 = 13 · S5 = 14 · S6 = 19 · S7 = 18 · **Total = 133 SP** (+ 8 SP de T1–T4 = **141**).
+⚠️ El desbalance sigue: S1 y S3 tienen 24 SP contra 13–14 de S4 y S5. Rebalancear al estimar en equipo (corrección #1 de la profe).
+
+### 13.3 Gaps detectados al analizar flujo + prototipo (2026-07-09) — _actualizado a la numeración nueva_
+- ✅ **RESUELTO — Prestadores:** creada **HU-33** (#33, gestionar prestadores + tipos de prestación), Sprint 3. En el prototipo y GitHub. _(era HU-49)_
+- ✅ **RESUELTO — Fallas:** creada **HU-34** (#34, registrar la falla asociada a cada tarea de la OT), Sprint 3. En el prototipo y GitHub. _(era HU-50)_
+- ✅ **Plantillas→OT:** ya contemplado por **HU-12** (crea plantillas) + **HU-14** (las aplica al crear la OT). No requiere HU nueva.
 - ❓ **Cancelación de OT:** el glosario la define (con motivo) pero no hay HU ni flujo. ¿Se agrega? (no seleccionada por ahora)
 - ❓ **Proveedores + Compras:** el modelo los tiene pero no hay HU. Definir si entran en el alcance.
-- ❓ **Evidencia en ticket:** HU-09 menciona evidencia fotográfica; el alta no la captura (campo existe). Menor.
-- 💡 **Automatizable:** alerta de stock mínimo (HU-36) como notificación activa; sugerir técnicos por especialidad al asignar tareas.
-- ✅ Cobertura prototipo: **34/34 HU** representadas. Automatizado ya: validar→OT (HU-11), egreso/baja de stock al completar tarea, OT finalizada al completar todas las tareas, y plan preventivo→genera OT (HU-29).
+- ❓ **Evidencia en ticket:** HU-9 menciona evidencia fotográfica; el alta no la captura (campo existe). Menor.
+- 💡 **Automatizable:** alerta de stock mínimo (HU-27) como notificación activa; sugerir técnicos por especialidad al asignar tareas.
+- ✅ Cobertura prototipo: **34/34 HU** representadas. Automatizado ya: validar→OT (HU-11), egreso/baja de stock al completar tarea, OT finalizada al completar todas las tareas, y plan preventivo→genera OT (HU-22).
 
-### 13.4 Automatizaciones / reglas de negocio (NO son HU nuevas)
+### 13.4 Automatizaciones / reglas de negocio (NO son HU nuevas) — _numeración nueva_
 Se implementan como **criterios de aceptación de HU existentes** (evita fragmentar el backlog, como pidió la profe):
-- **Estado de activo automático:** activo → "En mantenimiento" al poner la OT en ejecución; → "Operativo" al finalizarla. → regla de **HU-17 / HU-26 / HU-08**.
-- **Técnico sugerido por especialidad:** al asignar tarea, se priorizan (⭐) los técnicos cuya especialidad matchea el tipo de activo. → criterio de **HU-17** (usa HU-06).
-- **Materiales sugeridos:** al ejecutar, se proponen materiales según la falla; el técnico solo confirma. → criterio de **HU-22**.
-- **Aviso de ticket duplicado:** al registrar, avisa si el activo ya tiene un ticket abierto (no bloquea, el usuario decide). → criterio de **HU-09**.
-- **Tareas precargadas por plantilla:** al crear la OT, precarga las tareas estándar según el tipo de activo. → HU-13 / HU-17.
-- **Preventivos por vencimiento:** el dashboard detecta planes que vencen (≤7 días) y ofrece generar la OT. → HU-29.
-- **Cierre automático:** al completarse la última tarea, la OT pasa a *Finalizada* y su ticket a *Cerrado*, sin intervención manual. → HU-26.
-- **Orden automático de tareas (técnico):** su lista se ordena sola por prioridad + fecha prevista. → HU-21.
-- **Notificación de asignaciones:** badge en el menú del técnico con el nº de tareas pendientes. → HU-21.
-- Ya existentes: validar→OT (HU-11), egreso/stock al completar, OT finalizada auto, preventivo→OT (HU-29).
+- **Estado de activo automático:** activo → "En mantenimiento" al poner la OT en ejecución; → "Operativo" al finalizarla. → regla de **HU-14 / HU-20 / HU-7**.
+- **Técnico sugerido por especialidad:** al asignar tarea, se priorizan (⭐) los técnicos cuya especialidad matchea el tipo de activo. → criterio de **HU-14** (usa HU-5).
+- **Materiales sugeridos:** al ejecutar, se proponen materiales según la falla; el técnico solo confirma. → criterio de **HU-19**.
+- **Aviso de ticket duplicado:** al registrar, avisa si el activo ya tiene un ticket abierto (no bloquea, el usuario decide). → criterio de **HU-9**.
+- **Tareas precargadas por plantilla:** al crear la OT, precarga las tareas estándar según el tipo de activo. → **HU-12 / HU-14**.
+- **Preventivos por vencimiento:** el dashboard detecta planes que vencen (≤7 días) y ofrece generar la OT. → **HU-22**.
+- **Cierre automático:** al completarse la última tarea, la OT pasa a *Finalizada* y su ticket a *Cerrado*, sin intervención manual. → **HU-20**.
+- **Orden automático de tareas (técnico):** su lista se ordena sola por prioridad + fecha prevista. → **HU-18**.
+- **Notificación de asignaciones:** badge en el menú del técnico con el nº de tareas pendientes. → **HU-18**.
+- **Observaciones en la tarea:** el técnico registra actividades adicionales al ejecutar. → criterio de **HU-19** _(absorbe la vieja HU-23 / issue #39)_.
+- Ya existentes: validar→OT (**HU-11**), egreso/stock al completar, OT finalizada auto, preventivo→OT (**HU-22**).
 
-> **Corrección (prioridad del ticket):** la prioridad **NO** la carga el usuario autorizado. Según el glosario, la prioridad la asigna el área de infraestructura **a la OT**, y la tabla `tickets` del diccionario **no tiene** `prioridad`. Se quitó del alta de ticket; el admin la define en las **tareas de la OT** (HU-17). El prototipo la tenía mal en el ticket → corregido.
+> **Corrección (prioridad del ticket):** la prioridad **NO** la carga el usuario autorizado. Según el glosario, la prioridad la asigna el área de infraestructura **a la OT**, y la tabla `tickets` del diccionario **no tiene** `prioridad`. Se quitó del alta de ticket; el admin la define en las **tareas de la OT** (**HU-14**). El prototipo la tenía mal en el ticket → corregido.
 
 ---
 
