@@ -144,10 +144,10 @@ Cubre la totalidad de los espacios físicos y el anexo, segmentados en aulas, la
 - Asignación de técnicos según especialidad y disponibilidad.
 - Registro de prestadores de servicio externos para tareas que exceden la capacidad del equipo propio.
 - Historial de intervenciones por activo.
-- Notificaciones automáticas por correo electrónico.
 - Dashboard con indicadores de gestión (KPIs).
 
 **No incluye (versión inicial):**
+- Notificaciones automáticas por correo electrónico (los avisos son dentro del sistema).
 - Administración financiera (presupuestos, facturación, contabilidad, pagos).
 - Gestión completa del proceso de compras (selección de proveedores, emisión de órdenes de compra).
 - Aplicación móvil nativa.
@@ -482,7 +482,7 @@ Fechas indicativas por sprint (2 semanas): S1 10–23 ago · S2 24 ago–6 sep �
 | # | HU | SP | (antes) | Historia |
 |---|----|----|---------|----------|
 | #24 | HU-24 | 3 | HU-33 | Como **usuario**, quiero **ingresar con mis credenciales**, para acceder de forma segura al sistema. |
-| #25 | HU-25 | 3 | HU-34 | Como **usuario**, quiero **recuperar mi contraseña**, para no perder el acceso al sistema. |
+| #25 | HU-25 | 3 | HU-34 | Como **administrador**, quiero **restablecer la contraseña** de un usuario, para devolverle el acceso al sistema cuando la olvida. _(reescrita 2026-07-16: el flujo de autogestión requería correo, que quedó fuera del alcance)_ |
 | #26 | HU-26 | 5 | HU-35 | Como **administrador**, quiero **gestionar los usuarios y sus permisos**, para controlar los accesos al sistema. |
 | #27 | HU-27 | 3 | HU-36 | Como **administrador**, quiero configurar **alertas de stock mínimo**, para saber cuándo reponer. |
 
@@ -560,7 +560,7 @@ El reparto quedó **bastante balanceado**: entre 14 y 22 SP por sprint (antes, c
 - ❓ **Cancelación de OT:** el glosario la define (con motivo) pero no hay HU ni flujo. ¿Se agrega? (no seleccionada por ahora)
 - ❓ **Proveedores + Compras:** el modelo los tiene pero no hay HU. Definir si entran en el alcance.
 - ❓ **Evidencia en ticket:** HU-9 menciona evidencia fotográfica; el alta no la captura (campo existe). Menor.
-- 💡 **Automatizable:** alerta de stock mínimo (HU-27) como notificación activa; sugerir técnicos por especialidad al asignar tareas.
+- 💡 **Automatizable:** alerta de stock mínimo (HU-27) como aviso **dentro del sistema** (sin correo, ver alcance §3.4); sugerir técnicos por especialidad al asignar tareas.
 - ✅ Cobertura prototipo: **34/34 HU** representadas. Automatizado ya: validar→OT (HU-11), egreso/baja de stock al completar tarea, OT finalizada al completar todas las tareas, y plan preventivo→genera OT (HU-22).
 
 ### 13.4 Automatizaciones / reglas de negocio (NO son HU nuevas) — _numeración nueva_
