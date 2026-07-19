@@ -10,13 +10,13 @@
 - **Materia:** Seminario Integrador — UTN-FRRe
 - **Grupo:** G6 — Brites, Elisa Alejandra · Cettour, Ivo Claudio · Gonzalez, Matías Exequiel · Maldonado, Leandro Adrian · Martin Rodich, Victoria · Moray, Maria Paz · Ozuna Veron, Augusto Lautaro
 - **Repositorio:** https://github.com/matiasgzlez/SIGMA-Seminario-Integrador-G6
-- **Próxima entrega (carpeta):** **17/07/2026**
+- **Próxima entrega (carpeta):** **19/07/2026**
 
-### Checklist de la entrega del 17/07
+### Checklist de la entrega del 19/07
 
 | # | Sección | Estado | Fuente disponible |
 |---|---------|--------|-------------------|
-| 1 | Fuentes de recolección de requerimientos | ⬜ pendiente | — |
+| 1 | Fuentes de recolección de requerimientos | ✅ redactado (§1.1) | Entrevista Secretario de Infraestructura |
 | 2 | Declaración del problema + restricciones (situación actual) | 🟢 redactado (§2) — validar | — |
 | 3 | Objetivos del nuevo sistema | ⬜ pendiente | — |
 | 4 | Misión, Visión y Alcance | 🟢 redactado (§3) — validar | — |
@@ -63,11 +63,21 @@ Además gestiona:
 
 ---
 
+## 1.1 Fuentes de recolección de requerimientos
+
+La recolección de requerimientos se realizó mediante una **entrevista con el Secretario de Infraestructura de la UTN-FRRe, Carlos Olivieri**. Se abordaron los procesos actuales del área, las problemáticas existentes, las necesidades funcionales y los objetivos esperados para el nuevo sistema.
+
+La información obtenida permitió comprender el funcionamiento de la gestión de mantenimiento de la facultad, identificar las principales problemáticas del proceso actual y definir los requerimientos para desarrollar una solución que optimice la gestión de reclamos, la planificación de tareas, el control del inventario y el seguimiento de las actividades de mantenimiento.
+
+> Dato relevante: hoy las solicitudes se gestionan de manera informal por **WhatsApp, llamadas telefónicas y comunicaciones verbales**, por lo que la información histórica de reclamos y tareas es limitada.
+
+---
+
 ## 2. Declaración concisa del problema y restricciones
 
 ### 2.1 Declaración del problema
 
-La gestión del mantenimiento de la infraestructura física de la facultad se realiza hoy de manera **manual, informal y dispersa**: los desperfectos se comunican por vías no formales (llamadas telefónicas, mensajes, avisos verbales) y el seguimiento se lleva, cuando se lleva, en planillas de cálculo o en papel. No existe un registro único ni un canal formal de entrada.
+La gestión del mantenimiento de la infraestructura física de la facultad se realiza hoy de manera **manual, informal y dispersa**: los desperfectos se comunican por vías no formales (WhatsApp, llamadas telefónicas y comunicaciones verbales) y el seguimiento se lleva, cuando se lleva, en planillas de cálculo o en papel. No existe un registro único ni un canal formal de entrada.
 
 Como consecuencia:
 
@@ -253,7 +263,7 @@ Fuente: PDF "Diccionario". Estructura por columna: `Tabla | Campo | Tipo | Longi
 
 ## 11. ⭐ CORRECCIONES DE LA PROFE (16/06/2026) + fix propuesto
 
-> Estas correcciones aplican al **Modelo de Tablas** y **Diccionario de Datos**. Hay que rehacerlos para el 17/07. Cada punto tiene el fix que propongo; los marcados con ❓ requieren tu decisión.
+> Estas correcciones aplican al **Modelo de Tablas** y **Diccionario de Datos**. Hay que rehacerlos para el 19/07. Cada punto tiene el fix que propongo; los marcados con ❓ requieren tu decisión.
 >
 > ⚠️ **Además de estas 12 correcciones de la profe, hay 3 huecos propios detectados al escribir los criterios de aceptación** (falta tabla `especialidades`, falta dónde guardar credenciales, plantillas sin vínculo al tipo de activo). Ver **§13.2.1-bis**.
 
