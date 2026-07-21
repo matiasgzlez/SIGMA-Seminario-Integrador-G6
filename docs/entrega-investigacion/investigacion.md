@@ -41,6 +41,19 @@ Llegamos al Chaco con la hipótesis de que **no existe consejo profesional que m
 
 **Lo que sigue pendiente:** confirmarlo con COPIPACH. Nuestra lectura de los artículos es una interpretación, no una respuesta institucional.
 
+### ⭐⭐ El hallazgo que cierra el trabajo: COPITEC verifica la incumbencia n.º 11
+
+Existe un consejo **nacional** que matricula computación e informática: el **COPITEC** (Consejo Profesional de Ingeniería de Telecomunicaciones, Electrónica y Computación), creado por **Decreto-Ley 6070/58** y ratificado por la **Ley 14.467**. Esto corrige una afirmación que el borrador daba por buena («no existe colegiación nacional del informático»): sí existe, lo que no hay es un consejo único.
+
+Y lo más importante: para inscribirse como **perito ante la Justicia Nacional**, COPITEC admite a «ingenieros electromecánicos, electrónicos, en telecomunicaciones, **en sistemas, en informática o en computación, Analistas y Licenciados en Sistemas / Informática / Computación**», y exige dos cosas:
+
+1. **Matrícula al día**, sin sanciones vigentes.
+2. Que el título **acredite explícitamente competencia para «realizar pericias y tasaciones»** — por eso pide el plan de estudios y el documento de alcances e incumbencias junto al diploma.
+
+**Por qué importa tanto:** alguien en una oficina judicial abre el papel de incumbencias de un egresado de sistemas y busca ahí la actividad reservada n.º 11. Si no está, no lo inscribe. Es la comprobación empírica de que la tesis del trabajo no es teórica.
+
+**Efecto sobre la pregunta del Chaco:** ya no es «¿existe alguna matrícula para nuestro título?» (existe) sino «¿cuál rige para ejercer y peritar dentro de la provincia?». COPIPACH tiene «el manejo exclusivo de la matrícula» en jurisdicción provincial, así que la respuesta probablemente sea COPIPACH, pero eso sigue siendo nuestra lectura.
+
 ### Otro hallazgo del proceso: tres citas eran paráfrasis
 
 Al aplicar la regla «toda norma entre comillas se transcribe del texto publicado» descubrimos que **las citas centrales del borrador no eran literales**, incluida la que da título al artículo:
