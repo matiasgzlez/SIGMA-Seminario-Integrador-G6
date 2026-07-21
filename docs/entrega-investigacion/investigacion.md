@@ -2,7 +2,9 @@
 
 > Unidad Temática 5: *Peritaje, Arbitraje y Tasaciones* · **Grupo 6**
 > Seminario Integrador — UTN-FRRe
-> Última actualización: 2026-07-21
+> Última actualización: 2026-07-21 · entrega: agosto de 2026
+
+> ⚠️ **Todas las citas normativas de este cuaderno están verificadas contra su texto publicado** (julio de 2026). Si agregás una cita nueva, transcribila de la fuente oficial: durante la revisión encontramos que varias que circulan por internet, y que dábamos por literales, eran paráfrasis.
 
 ---
 
@@ -13,32 +15,58 @@
 - **Tema asignado:** *El rol profesional en temas de ciberseguridad*
 - **Alcance pedido:** panorama general + **qué pasa en Argentina** (normativa e institucionalidad) + **qué pasa en Chaco** (normativa e institucionalidad)
 
-### Los dos archivos de la entrega
+### Los archivos de la entrega
 
 | Archivo | Qué es | Para qué se usa |
 |---|---|---|
-| **`articulo.md`** | **El artículo terminado.** El texto va tal cual, para copiar. Los gráficos no están dibujados: están *descritos* — qué tipo de gráfico, con qué datos, qué debe mostrar y el epígrafe literal. | Es lo que se entrega |
-| `investigacion.md` | Este documento. El **cuaderno de trabajo**: todo lo relevado, con más detalle normativo del que entró en el artículo, y las marcas ❓ de lo que falta verificar. | Es de dónde salió el artículo |
+| **`web/index.html`** | **El artículo.** Es la fuente: acá se corrige. Página de scroll vertical con las ocho figuras armadas. Se levanta con `npm run dev` (puerto 3001) o se abre con doble clic. | Es lo que se muestra |
+| **`articulo.md`** | El mismo artículo en markdown, **generado automáticamente desde el HTML**. Las figuras vienen como bloque con epígrafe, «cómo leerlo» y tabla de datos, para rearmarlas en papel. | Es lo que se entrega impreso |
+| `investigacion.md` | Este documento. El **cuaderno de trabajo**: lo relevado, incluido lo que no entró al artículo, y las marcas ❓. | Es de dónde salió todo |
 
-> **Regla para no confundirlos.** Si algo tiene que leerlo la profe, va en `articulo.md`. Si es material de respaldo, contexto o una duda nuestra, queda acá.
-> Si los dos discrepan en un dato, manda `investigacion.md`, que es donde está la fuente.
+> **Regla para no confundirlos.** El texto canónico vive en `web/index.html`. `articulo.md` se regenera desde ahí, así que **nunca hay que editarlo a mano**: se pisa en la próxima generación.
 
-**Qué NO está en el artículo, a propósito:** todo el material de este documento que no aporta al tema asignado. El tema es *el rol profesional*, así que la normativa argentina y la chaqueña entran sólo en la medida en que **le crean deberes al profesional** — no como panorama legislativo. La sección de aplicación a SIGMA (§9 de este documento) tampoco entró: es interesante para nosotros, pero se va del tema.
+### ⭐ El hallazgo que dio vuelta el trabajo (2026-07-21)
 
-### Las seis figuras: qué forma les dimos y por qué
+Llegamos al Chaco con la hipótesis de que **no existe consejo profesional que matricule informáticos**, basada en que el sitio de COPIPACH no menciona la disciplina. Al ir del sitio al **texto de la Ley 2955-C** la hipótesis se cayó:
 
-La descripción completa de cada una está en `articulo.md`, en el bloque que la precede. Acá queda el criterio.
+- **Art. 1** — somete a la ley al ejercicio de «la ingeniería **en todas las ramas y especialidades**» y a las licenciaturas conexas «que no estén reguladas por ley especial».
+- **Art. 31 inc. 1** — le da al Consejo el gobierno de la matrícula de «**todos los Ingenieros de todas las ramas de especialidad**».
+- **Art. 45** — cuatro áreas de especialidad, la cuarta es «otras», y aclara: «Este ordenamiento es **meramente enunciativo** y a medida que surjan nuevas especialidades, la Comisión Directiva decidirá a qué área se incorporará».
+- **Art. 4 inc. 4** — las **pericias** ante los Tribunales de la Provincia son ejercicio profesional.
+- **Art. 7 y 8** — matrícula obligatoria; ejercer sin ella es **ejercicio ilegal de la profesión**.
 
-| # (en el artículo) | Figura | Forma elegida | Fuente del dato |
-|---|--------|---------------|-----------------|
+**Conclusión nueva:** la ley probablemente ya alcanza al Ingeniero en Sistemas de Información, con matrícula obligatoria incluida. El vacío no es normativo sino **institucional**: COPIPACH no tiene área de informática, ni código de ética de la disciplina, ni comunicación hacia la carrera.
+
+**Evidencia comparada:** el Colegio de Ingenieros Especialistas de Santa Fe (Ley 11.291) matricula expresamente el área de **Sistemas**. Un consejo provincial de ingeniería que resolvió la misma pregunta por la afirmativa.
+
+**Lo que sigue pendiente:** confirmarlo con COPIPACH. Nuestra lectura de los artículos es una interpretación, no una respuesta institucional.
+
+### Otro hallazgo del proceso: tres citas eran paráfrasis
+
+Al aplicar la regla «toda norma entre comillas se transcribe del texto publicado» descubrimos que **las citas centrales del borrador no eran literales**, incluida la que da título al artículo:
+
+| Teníamos | Dice en realidad |
+|---|---|
+| «Elaborar, diseñar e implementar métodos de seguridad de información» | «Elaborar, diseñar, implementar **y/o evaluar métodos y normas a seguir** en cuestiones de seguridad de la información y los datos procesados, generados y/o transmitidos por el software» |
+| «Realizar arbitrajes, peritajes y tasaciones en áreas de su especialidad» | «Realizar arbitrajes, peritajes y tasaciones **referidas a las áreas específicas de su aplicación y entendimiento**» |
+| «No realizar actos contrarios a la buena técnica…» | «No debe llevar a cabo actos **reñidos** con la buena técnica, aún cuando pudiera ser en cumplimiento de órdenes **emanadas de autoridades, mandantes o comitentes**» |
+
+Todas corregidas. Está declarado en la sección de Declaraciones del artículo.
+
+### Las ocho figuras
+
+| # | Figura | Forma | Fuente |
+|---|--------|-------|--------|
 | 1 | Cadena normativa de la incumbencia | Diagrama de flujo | Elaboración propia |
-| 2 | Línea de tiempo normativa 1988–2026 | Diagrama editorial, etiquetas en 4 niveles | Compilado del CNC |
-| 3 | Reportes UFECI 2021–2024 | Columnas, un solo color, énfasis en 2024 | UFECI, informe 2024 |
-| 4 | Modalidades reportadas en 2024 | Barras horizontales, forma de *énfasis* | UFECI, informe 2024 |
-| 5 | Accesos ilegítimos por plataforma | Barras, un solo color en dos intensidades | UFECI, informe 2024 |
-| 6 | Incidentes CERT.ar por sector | Medidor de una sola razón (no una torta) | CERT.ar, informe 2024 |
+| 2 | Línea de tiempo normativa 1988–2026 | Diagrama, color por quién dictó la norma | Compilado del CNC |
+| 3 | Reportes UFECI 2021–2024 | Columnas, énfasis en 2024 | UFECI 2024 |
+| 4 | Modalidades reportadas en 2024 | Barras, una por categoría | UFECI 2024 |
+| 5 | Accesos ilegítimos por plataforma | Barras, rampa de un tono | UFECI 2024 |
+| 6 | Incidentes CERT.ar por sector | Medidor de una razón | CERT.ar 2024 |
+| 7 | Ataques semanales por organización | Barras, énfasis en Argentina | Check Point, mayo 2026 |
+| 8 | Brecha mundial de profesionales | Barra de hueco | ISC2 |
 
-Las figuras 3 a 6 usan **forma de énfasis** (un color + gris) en lugar de paleta categórica: el trabajo del dato es señalar *una* serie o categoría dominante, no distinguir identidades entre sí. Los criterios generales de armado están en el anexo de `articulo.md`.
+Paleta categórica validada contra el fondo de las tarjetas. Cada figura trae su tabla de datos desplegable, que es lo que exige la regla de relieve cuando el color no llega al contraste mínimo.
 
 ### Estado de la investigación
 
@@ -73,9 +101,12 @@ Resolución ME 786/2009
         ↓  incluye a Informática/Sistemas en ese régimen y fija
            las ACTIVIDADES RESERVADAS al título
 Actividad reservada n.º 9 (Ing. en Sistemas de Información):
-   "Elaborar, diseñar e implementar métodos de SEGURIDAD DE INFORMACIÓN"
+   "Elaborar, diseñar, implementar y/o evaluar métodos y normas a seguir
+    en cuestiones de SEGURIDAD DE LA INFORMACIÓN y los datos procesados,
+    generados y/o transmitidos por el software"
 Actividad reservada n.º 11:
-   "Realizar ARBITRAJES, PERITAJES Y TASACIONES en áreas de su especialidad"
+   "Realizar ARBITRAJES, PERITAJES Y TASACIONES referidas a las áreas
+    específicas de su aplicación y entendimiento"
 ```
 
 De ahí se desprende todo lo demás: si la actividad está reservada, hay un **estándar de conducta exigible**; si hay estándar exigible, hay **responsabilidad civil, penal y ética** cuando no se cumple. Ese es el "rol profesional".
@@ -242,13 +273,13 @@ Y fijó las **actividades reservadas**. Estas son las que importan para el tema:
 
 | Título | # | Actividad reservada | Relevancia |
 |---|---|---|---|
-| **Ing. en Sistemas de Información** | 9 | **"Elaborar, diseñar e implementar métodos de seguridad de información"** | 🔴 núcleo |
+| **Ing. en Sistemas de Información** | 9 | **"Elaborar, diseñar, implementar y/o evaluar métodos y normas a seguir en cuestiones de seguridad de la información y los datos procesados, generados y/o transmitidos por el software"** | 🔴 núcleo |
 | Ing. en Sistemas de Información | 10 | "Establecer métricas y normas de calidad y **seguridad de software**" | 🔴 núcleo |
 | Ing. en Sistemas de Información | 4 | "Seleccionar arquitecturas tecnológicas de procesamiento y sistemas de comunicación de datos" | 🟠 diseño seguro |
 | Ing. en Sistemas de Información | 8 | "Determinar y controlar normas técnicas de funcionamiento del software" | 🟠 |
-| **Ing. en Sistemas de Información** | **11** | **"Realizar arbitrajes, peritajes y tasaciones en áreas de su especialidad"** | 🔴 **Unidad Temática 5** |
-| **Lic. en Sistemas** | 6 | **"Planificar y evaluar sistemas de seguridad en almacenamiento y procesamiento de información"** | 🔴 núcleo |
-| **Lic. en Sistemas** | 7 | **"Efectuar auditoría de sistemas informáticos y realizar peritajes"** | 🔴 Unidad 5 |
+| **Ing. en Sistemas de Información** | **11** | **"Realizar arbitrajes, peritajes y tasaciones referidas a las áreas específicas de su aplicación y entendimiento"** | 🔴 **Unidad Temática 5** |
+| **Lic. en Sistemas** | 6 | **"Planificar, dirigir, realizar y/o evaluar los sistemas de seguridad en el almacenamiento y procesamiento de la información…"** | 🔴 núcleo |
+| **Lic. en Sistemas** | 7 | **"Efectuar las tareas de Auditoría de los Sistemas Informáticos. Realizar arbitrajes, pericias y tasaciones relacionados con los Sistemas Informáticos"** | 🔴 Unidad 5 |
 | Lic. en Sistemas | 5 | "Establecer métricas y normas de calidad y seguridad de software" | 🔴 |
 
 > 🎯 **Este es el hallazgo central de la investigación.** La ciberseguridad no nos toca "porque sabemos de computadoras". Nos toca porque una resolución ministerial, dictada bajo el art. 43 de una ley nacional, dice que **diseñar los métodos de seguridad de la información es una actividad reservada a nuestro título**. Y en la misma lista, en el ítem siguiente, aparece el peritaje.
@@ -294,7 +325,7 @@ En el país existen consejos profesionales de ciencias informáticas de alcance 
 
 | Art. | Deber | Traducción a ciberseguridad |
 |---|---|---|
-| **6** | No realizar actos contrarios a la buena técnica, **aun cuando sea en cumplimiento de órdenes** | 🔴 "Me lo pidió mi jefe" no es defensa. Si te ordenan guardar contraseñas en texto plano, el deber es negarse. |
+| **6** | No debe llevar a cabo actos **reñidos** con la buena técnica, aún cuando pudiera ser en cumplimiento de **órdenes emanadas de autoridades, mandantes o comitentes** | 🔴 "Me lo pidió mi jefe" no es defensa. Si te ordenan guardar contraseñas en texto plano, el deber es negarse. |
 | **8** | Responsabilidad personal por la **firma** de trabajos, dictámenes e informes | El informe de auditoría o el peritaje comprometen a la persona, no sólo a la empresa |
 | **9** | No permitir que no profesionales ejerzan en su nombre | Prestar la firma es falta ética |
 | **10** | Rechazar tareas que contraríen leyes y reglamentos | No implementar un tratamiento de datos ilegal |
